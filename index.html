@@ -1,11 +1,330 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Conditions d'utilisation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - SuiviFinance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4285f4;
+            --secondary-color: #34a853;
+            --accent-color: #fbbc05;
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-footer {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        nav ul li a:hover {
+            opacity: 0.8;
+        }
+        
+        .hero {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        main {
+            padding: 60px 0;
+            background-color: var(--white);
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        
+        .policy-section {
+            margin-bottom: 40px;
+        }
+        
+        .policy-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+        
+        .policy-section p, .policy-section ul {
+            margin-bottom: 15px;
+        }
+        
+        .policy-section ul {
+            padding-left: 20px;
+        }
+        
+        .policy-section strong {
+            color: var(--secondary-color);
+        }
+        
+        .policy-section a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .policy-section a:hover {
+            text-decoration: underline;
+        }
+        
+        .last-updated {
+            font-style: italic;
+            color: #666;
+            margin-top: 40px;
+            text-align: right;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-right: 20px;
+        }
+        
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        .footer-links a:hover {
+            opacity: 0.8;
+        }
+        
+        .copyright {
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content, .footer-content {
+                flex-direction: column;
+            }
+            
+            nav ul, .footer-links {
+                margin-top: 20px;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Conditions Générales d'Utilisation</h1>
-  <p>Bienvenue sur notre application. Voici les conditions d'utilisation...</p>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="assets/adaptive-icon.png" alt="Logo SuiviFinance" height="40">
+                SuiviFinance
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Politique de Confidentialité</h1>
+            <p>Nous accordons une grande importance à la protection de vos données personnelles</p>
+        </div>
+    </section>
+    
+    <main class="container">
+        <div class="policy-section">
+            <h2>Introduction</h2>
+            <p>La présente politique de confidentialité a pour but de vous informer sur la manière dont SuiviFinance collecte, utilise et protège vos informations personnelles lorsque vous utilisez notre application mobile.</p>
+            <p>Nous nous engageons à respecter votre vie privée et à protéger les informations que vous nous confiez. Veuillez lire attentivement cette politique pour comprendre nos pratiques concernant vos données personnelles.</p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Collecte des Données</h2>
+            <p>Nous collectons les types d'informations suivants :</p>
+            <ul>
+                <li><strong>Informations que vous nous fournissez :</strong> Données financières que vous entrez manuellement dans l'application (revenus, dépenses, budgets, etc.).</li>
+                <li><strong>Informations collectées automatiquement :</strong> Données d'utilisation de l'application et informations techniques sur votre appareil.</li>
+            </ul>
+            <p>Toutes les données financières que vous saisissez sont stockées localement sur votre appareil et ne sont pas transmises à nos serveurs sans votre consentement explicite.</p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Utilisation des Données</h2>
+            <p>Nous utilisons vos données personnelles aux fins suivantes :</p>
+            <ul>
+                <li>Fournir, maintenir et améliorer les fonctionnalités de notre application</li>
+                <li>Personnaliser votre expérience utilisateur</li>
+                <li>Analyser l'utilisation de l'application pour améliorer nos services</li>
+                <li>Détecter et prévenir les problèmes techniques</li>
+            </ul>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Stockage et Sécurité des Données</h2>
+            <p>La sécurité de vos données est notre priorité. Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos informations personnelles contre tout accès non autorisé, modification, divulgation ou destruction.</p>
+            <p>Vos données financières sont principalement stockées localement sur votre appareil. Si vous activez la fonctionnalité de sauvegarde, ces données seront chiffrées avant d'être transmises et stockées sur nos serveurs sécurisés.</p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Partage des Données</h2>
+            <p>Nous ne vendons, n'échangeons ni ne transférons vos informations personnelles à des tiers sans votre consentement, sauf dans les cas suivants :</p>
+            <ul>
+                <li>Lorsque cela est nécessaire pour fournir un service que vous avez demandé</li>
+                <li>Pour se conformer à une obligation légale</li>
+                <li>Pour protéger nos droits, notre propriété ou notre sécurité</li>
+            </ul>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Vos Droits</h2>
+            <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants concernant vos données personnelles :</p>
+            <ul>
+                <li>Droit d'accès à vos données</li>
+                <li>Droit de rectification des données inexactes</li>
+                <li>Droit à l'effacement (droit à l'oubli)</li>
+                <li>Droit à la limitation du traitement</li>
+                <li>Droit à la portabilité des données</li>
+                <li>Droit d'opposition au traitement</li>
+            </ul>
+            <p><strong>Suppression de vos données ou de votre compte :</strong> L'application SuiviFinance vous permet de supprimer vos données ou votre compte directement depuis l'application. Pour ce faire, accédez à la section "Paramètres" puis "Données" et sélectionnez "Supprimer mes données / compte". Vous pourrez alors choisir entre supprimer uniquement vos données ou supprimer entièrement votre compte.</p>
+            <p>Pour exercer vos autres droits ou pour toute question concernant vos données personnelles, veuillez nous contacter à l'adresse email suivante : <a href="mailto:suivifinance@la-saint-quentinoise.fr">suivifinance@la-saint-quentinoise.fr</a></p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Cookies et Technologies Similaires</h2>
+            <p>Notre application peut utiliser des cookies et des technologies similaires pour améliorer votre expérience utilisateur. Vous pouvez configurer votre appareil pour refuser tous les cookies ou pour être averti lorsqu'un cookie est envoyé.</p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Modifications de la Politique de Confidentialité</h2>
+            <p>Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Toute modification sera publiée sur cette page avec une date de mise à jour. Nous vous encourageons à consulter régulièrement cette page pour rester informé des changements.</p>
+        </div>
+        
+        <div class="policy-section">
+            <h2>Contact</h2>
+            <p>Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à :</p>
+            <p>
+                <strong>Email :</strong> <a href="mailto:suivifinance@la-saint-quentinoise.fr">suivifinance@la-saint-quentinoise.fr</a><br>
+                <strong>Adresse :</strong> La Saint-Quentinoise, Saint-Quentin, France
+            </p>
+        </div>
+        
+        <p class="last-updated">Dernière mise à jour : 18 juin 2025</p>
+    </main>
+    
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <div class="logo-footer">
+                    <img src="assets/adaptive-icon.png" alt="Logo SuiviFinance" height="30">
+                    SuiviFinance
+                </div>
+                <p>Votre outil de gestion financière personnelle</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 SuiviFinance. Tous droits réservés.</p>
+        </div>
+    </footer>
 </body>
 </html>
